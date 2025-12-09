@@ -16,6 +16,7 @@ pipeline {
                 echo 'Deploying application...'
             }
         }
+    }
     post {
         success {
             echo 'Build Successful'
@@ -23,6 +24,5 @@ pipeline {
         failure {
             echo 'Build Failed'
         }
-    }
     }
 }
